@@ -28,14 +28,13 @@ body{
     list-style: none;
 }
 
-.link{
+
+.link a{    
+    text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.dropdown{
-    display: none;    
-}
 
 
 
@@ -45,14 +44,15 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     background-color: #1f2937;
 }
 
 .section1-content1{
     padding: 0 20px;
     box-sizing: border-box;
-    width: 384px;
+    width: 500px;
 }
 
 .content1-text{
@@ -79,9 +79,7 @@ body{
     color: #E5E7EB;
     font-size: 18px;
     margin: 0;
-    
-    max-width: 500px;
-    min-width: 300px;
+    width: 500px;
 }
 
 .button-section{
@@ -95,7 +93,7 @@ body{
 }
  
 .section1-content2{
-   width: 484px;
+   width: 500px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -109,45 +107,3 @@ body{
 
 
 
-/* TABLECT */
-
-@media(max-width:768px){
-
-    /* header */
-    .dropdown{
-        display: block;
-        width: 50px;
-        height: 40px;
-        border: 1px, white, solid;
-        background-color: #323a44;
-        color: white;
-        border-radius: 10px;
-    }
-
-    .header{
-        flex-direction: column;
-    }
-
-    .content-links{
-        display: none;
-    }
-
-    .content-logo{
-        display: flex;
-        justify-content: space-around;
-        align-items: center; 
-        width: 100%;
-    }
-
-    /* section */
-    .section1-content2{
-        width: 368px;
-     }
-     
-     .section2-img{
-         width: 300px;
-         height: 180px;
-         box-sizing: border-box;
-     }
-}
-  
